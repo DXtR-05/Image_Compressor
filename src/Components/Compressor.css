@@ -1,0 +1,221 @@
+/* Components/Compressor.css */
+
+/* Background and Typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #f8b500, #fceabb);
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering content */
+.center {
+    text-align: center !important;
+}
+
+.mainContainer {
+    margin: 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Navbar styling */
+.navbar {
+    z-index: 1041;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #3498db, #2980b9) !important;
+    padding: 20px;
+    animation: slideDown 0.5s ease-out;
+    border-radius: 8px;
+}
+
+.navbar-content {
+    color: #fff !important;
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.help-icon,
+.history-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #fff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.help-icon:hover,
+.history-icon:hover {
+    color: #FFEB3B;
+    transform: rotate(20deg);
+}
+
+/* Containers styling */
+.help-container,
+.history-container {
+    text-align: left;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    animation: popIn 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    margin-right: 10px;
+    box-sizing: border-box;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    color: #ecf0f1;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons:hover {
+    color: #e74c3c;
+    transform: scale(1.2);
+}
+
+/* Upload card and buttons */
+.uploadCard {
+    width: 80%;
+    display: inline-block;
+    animation: bounceIn 0.8s ease-out;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ecf0f1;
+    transition: transform 0.3s;
+    border-radius: 8px;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #3498db;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#qualitySlider {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.btn.download-btn {
+    background-color: #2ecc71;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn.download-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+.btn-reset {
+    border: none;
+    color: white;
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin-left: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-reset:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.compressed-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-top: 10px;
+    transition: color 0.3s, transform 0.3s;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.compressed-message:hover {
+    color: #27ae60;
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .help-container,
+    .history-container {
+        width: 100%;
+        max-width: none;
+    }
+}
